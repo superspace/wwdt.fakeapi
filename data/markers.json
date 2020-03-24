@@ -1,0 +1,75 @@
+[{
+        "id": 1,
+        "time": 7,
+        "title": "Marker A",
+        "assets": [{
+                "title": "Bild",
+                "src": "/assets/uploads/session-1/asset-1.jpg",
+                "type": "JPG"
+            },
+            {
+                "title": "Zeitplan",
+                "src": "",
+                "type": "XLS"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "time": 12,
+        "title": "Marker B",
+        "assets": [{
+                "title": "Konzept",
+                "src": "",
+                "type": "PDF"
+            },
+            {
+                "title": "Schnappschuss",
+                "src": "/assets/uploads/session-1/asset-2.gif",
+                "type": "JPG"
+            },
+            {
+                "title": "Detailansicht",
+                "src": "/assets/uploads/session-1/asset-3.jpg",
+                "type": "JPG"
+            },
+            {
+                "title": "Zeitplan 2",
+                "src": "",
+                "type": "XLS"
+            },
+            {
+                "title": "Protokoll",
+                "src": "",
+                "type": "TXT"
+            },
+            {
+                "title": "Skizze 2",
+                "src": "/assets/uploads/session-1/asset-4.jpg",
+                "type": "JPG"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "time": 3,
+        "title": "Marker C",
+        "assets": []
+    },
+    {
+        "id": 4,
+        "time": 27,
+        "title": "Marker D",
+        "assets": [{
+                "title": "Asset 1",
+                "src": "/assets/uploads/session-1/asset-5.png",
+                "type": "PNG"
+            },
+            {
+                "title": "Asset 2",
+                "src": "",
+                "type": "DOC"
+            }
+        ]
+    }
+]

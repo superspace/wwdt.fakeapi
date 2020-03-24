@@ -1,0 +1,39 @@
+[
+    {
+        "id": 1,
+        "title": "Projekt A",
+        "sessions": [{
+                "id": 1,
+                "title": "Session A-1",
+                "recordings": [{
+                    "id": 1,
+                    "in": 1582724557758,
+                    "type": "video/mp4",
+                    "file_path": "http://mirrors.standaloneinstaller.com/video-sample/jellyfish-25-mbps-hd-hevc.mp4",
+                    "transcript": "/assets/tracks/session-1/track-1.vtt"
+                }]
+            },
+            {
+                "id": 2,
+                "title": "Session A-2",
+                "recordings": []
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "Projekt B",
+        "sessions": [{
+                "id": 3,
+                "title": "Session B-1",
+                "recordings": []
+            }
+
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Projekt C",
+        "sessions": []
+    }
+]
