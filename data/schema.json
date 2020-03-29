@@ -1,0 +1,30 @@
+{
+    "marker" : [
+        {
+            "id": "[id:INT]",
+            "time": "[time:INT]",
+            "title": "[title]",
+            "assets": "[assets:LIST:ID]"
+        }
+    ],
+    "assets" : {
+        "[id]":{
+            "title": "[title:STRI]",
+            "description": "[description]",
+            "content": "[content]",
+            "type": "[type: IMAGE | FILE | TEXT | LABEL ]",
+            "file": {
+                "src": "[filepath]",
+                "thumb": "[thumbpath]]",
+                "filetype": "[filetype]",
+                "filesize": "[filesize]"
+            },
+            "tags": "[tags:LIST]",
+            "author": "[author]",
+            "creationdate": "[creationdate:TIMESTAMP]",
+            "modificationdate": "[modificationdate:TIMESTAMP]",
+            "rank": "[rank:INT]",
+            "related": "[related:LIST:ID]"
+        }
+    }
+}

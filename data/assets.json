@@ -1,0 +1,98 @@
+{
+    "1":{
+        "title": "Bild",
+        "description": "",
+        "content": "",
+        "type": "IMAGE",
+        "file": {
+            "src": "/assets/uploads/session-1/asset-1.jpg",
+            "thumb": "/assets/uploads/session-1/_thumbs/asset-1.jpg",
+            "filetype": "image/jpg",
+            "filesize": 22343
+        },
+        "tags": "",
+        "author": "User A",
+        "creationdate": "2020-03-27 13:23:10",
+        "modificationdate": "2020-03-29 12:23:10",
+        "rank": 3,
+        "related": [2]
+    },
+    "2":{
+        "title": "Zeitplan",
+        "description": "Zeitplan Phase 1",
+        "content": "",
+        "type": "FILE",
+        "file": {
+            "src": "/assets/uploads/session-1/asset-2.xls",
+            "thumb": "/assets/uploads/session-1/_thumbs/asset-2.jpg",
+            "filetype": "application/xls",
+            "filesize": 97987
+        },
+        "tags": "",
+        "author": "User B",
+        "creationdate": "2020-03-25 16:22:09",
+        "modificationdate": "2020-03-28 11:12:10",
+        "rank": 2,
+        "related": []
+    },
+    "3":{
+        "title": "Konzept",
+        "description": "",
+        "content": "",
+        "type": "FILE",
+        "file": {
+            "src": "/assets/uploads/session-1/asset-3.pdf",
+            "thumb": "/assets/uploads/session-1/_thumbs/asset-3.jpg",
+            "filetype": "application/pdf",
+            "filesize": 98787
+        },
+        "tags": "",
+        "author": "",
+        "creationdate": "2020-03-25 16:22:09",
+        "modificationdate": "2020-03-28 11:12:10",
+        "rank": 2,
+        "related": []
+    },
+    "4":{
+        "title": "Detailansicht",
+        "description": "",
+        "content": "",
+        "type": "IMAGE",
+        "file": {
+            "src": "/assets/uploads/session-1/asset-4.jpg",
+            "thumb": "/assets/uploads/session-1/_thumbs/asset-4.jpg",
+            "filetype": "image/jpg",
+            "filesize": 98787
+        },
+        "tags": "",
+        "author": "User C",
+        "creationdate": "2020-03-25 16:22:09",
+        "modificationdate": "2020-03-28 11:12:10",
+        "rank": 2,
+        "related": []
+    },
+    "5":{
+        "title": "Protokoll",
+        "description": "",
+        "content": "Das ist der Inhalt des Files in Textform",
+        "type": "TEXT",
+        "tags": "",
+        "author": "User B",
+        "creationdate": "2020-03-25 16:22:09",
+        "modificationdate": "2020-03-28 11:12:10",
+        "rank": 4,
+        "related": [1,2]
+    },
+    "6":{
+        "title": "ERKENNTNISSE",
+        "description": "",
+        "content": "",
+        "type": "LABEL",
+        "tags": "",
+        "author": "User A",
+        "creationdate": "2020-03-25 16:22:09",
+        "modificationdate": "2020-03-28 11:12:10",
+        "rank": 4,
+        "related": []
+    }
+}
