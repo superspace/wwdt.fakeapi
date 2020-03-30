@@ -1,24 +1,26 @@
 <?php
-ini_set('display_errors', 1);
+ini_set('display_errors', true);
 ini_set('error_reporting', E_ALL & ~E_NOTICE);
 
 header("Content-type:application/json");
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 
+$response = array(
+    'status'=>'ERROR'
+);
+
 if (isset($_REQUEST['q'])) {
 
     $endpoint = $_REQUEST['q'];
 
-    $response = array(
-        'status'=>'ERROR'
-    );
-
-
-
     switch ($endpoint) {
 
-        // Get
+        /**
+         * Get projects
+         * 
+         * @param sessionId
+         **/
 
         case 'get-projects' :
             $data = file_get_contents('data/projects.json');
@@ -27,36 +29,21 @@ if (isset($_REQUEST['q'])) {
             break;
 
         case 'get-assets' :
-            $id = isset($_GET['sessionId']) ? $_GET['sessionId'] : false;
-            if ($id) {
-                $data = file_get_contents('data/assets.json');
-                $response['result'] = json_decode($data);
-                $response['status'] = 'OK';
-            } else {
-                $response['message'] = 'ID missing';
-            }
+            $data = file_get_contents('data/assets.json');
+            $response['result'] = json_decode($data);
+            $response['status'] = 'OK';
             break;
 
         case 'get-markers' :
-            $id = isset($_GET['sessionId']) ? $_GET['sessionId'] : false;
-            if ($id) {
-                $data = file_get_contents('data/markers.json');
-                $response['result'] = json_decode($data);
-                $response['status'] = 'OK';
-            } else {
-                $response['message'] = 'ID missing';
-            }
+            $data = file_get_contents('data/markers.json');
+            $response['result'] = json_decode($data);
+            $response['status'] = 'OK';
             break;
 
         case 'get-arrangement' :
-            $id = isset($_GET['id']) ? $_GET['id'] : false;
-            if ($id) {
-                $data = file_get_contents('data/arrangement.json');
-                $response['result'] = json_decode($data);
-                $response['status'] = 'OK';
-            } else {
-                $response['message'] = 'ID missing';
-            }
+            $data = file_get_contents('data/arrangement.json');
+            $response['result'] = json_decode($data);
+            $response['status'] = 'OK';
             break;
 
         // Create
@@ -77,9 +64,27 @@ if (isset($_REQUEST['q'])) {
          * @param id
          * @param title
          * @param description
+         * @param content
+         * @param tags
+         * @param rank
+         * @param file
          **/
         
         case 'update-asset' :
+            $response['status'] = 'OK';
+            $response['request'] = $_POST;            
+            break;
+
+        /**
+         * Update Marker
+         * 
+         * @param id
+         * @param title
+         * @param time
+         * @param assets
+         **/
+
+        case 'update-marker' :
             $response['status'] = 'OK';
             $response['request'] = $_POST;            
             break;
