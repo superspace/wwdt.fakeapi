@@ -90,6 +90,17 @@ if (isset($_REQUEST['q'])) {
             break;
 
         /**
+         * Delete Marker 
+         * 
+         * @param id
+        */
+
+        case 'delete-marker' :
+            $response['status'] = 'OK';
+            $response['request'] = $_POST;            
+            break;
+
+        /**
          * Delete Asset
          * 
          * @param id

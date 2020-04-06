@@ -5,8 +5,8 @@
         "content": "",
         "type": "IMAGE",
         "file": {
-            "src": "/assets/uploads/session-1/asset-1.jpg",
-            "thumb": "/assets/uploads/session-1/_thumbs/asset-1.jpg",
+            "src": "/assets/session-1/uploads/asset-1.jpg",
+            "thumb": "/assets/session-1/uploads/_thumbs/asset-1.jpg",
             "filetype": "image/jpg",
             "filesize": 22343
         },
@@ -23,8 +23,8 @@
         "content": "",
         "type": "FILE",
         "file": {
-            "src": "/assets/uploads/session-1/asset-2.xls",
-            "thumb": "/assets/uploads/session-1/_thumbs/asset-2.jpg",
+            "src": "/assets/session-1/uploads/asset-2.gif",
+            "thumb": "/assets/session-1/uploads/_thumbs/asset-2.jpg",
             "filetype": "application/xls",
             "filesize": 97987
         },
@@ -41,8 +41,8 @@
         "content": "",
         "type": "FILE",
         "file": {
-            "src": "/assets/uploads/session-1/asset-3.pdf",
-            "thumb": "/assets/uploads/session-1/_thumbs/asset-3.jpg",
+            "src": "/assets/session-1/uploads/asset-3.pdf",
+            "thumb": "/assets/session-1/uploads/_thumbs/asset-3.jpg",
             "filetype": "application/pdf",
             "filesize": 98787
         },
@@ -59,8 +59,8 @@
         "content": "",
         "type": "IMAGE",
         "file": {
-            "src": "/assets/uploads/session-1/asset-4.jpg",
-            "thumb": "/assets/uploads/session-1/_thumbs/asset-4.jpg",
+            "src": "/assets/session-1/uploads/asset-4.jpg",
+            "thumb": "/assets/session-1/uploads/_thumbs/asset-4.jpg",
             "filetype": "image/jpg",
             "filesize": 98787
         },
@@ -74,7 +74,7 @@
     "5":{
         "title": "Protokoll",
         "description": "",
-        "content": "Das ist der Inhalt des Files in Textform",
+        "content": "<p>Das ist der Inhalt des Files in Textform</p>",
         "type": "TEXT",
         "tags": [],
         "author": "User B",

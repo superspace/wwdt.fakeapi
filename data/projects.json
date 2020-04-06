@@ -9,8 +9,8 @@
                     "id": 1,
                     "in": 1582724557758,
                     "type": "video/mp4",
-                    "file_path": "http://mirrors.standaloneinstaller.com/video-sample/jellyfish-25-mbps-hd-hevc.mp4",
-                    "transcript": "/assets/tracks/session-1/track-1.vtt"
+                    "file_path": "https://wwdt.superspace.ch/assets/session-1/video/skype-record.mp4",
+                    "transcript": "/assets/session-1/tracks/track-1.vtt"
                 }],
                 "tags": [
                     "FINAL",
