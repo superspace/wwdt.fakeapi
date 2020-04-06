@@ -12,6 +12,11 @@
                     "file_path": "http://mirrors.standaloneinstaller.com/video-sample/jellyfish-25-mbps-hd-hevc.mp4",
                     "transcript": "/assets/tracks/session-1/track-1.vtt"
                 }],
+                "tags": [
+                    "FINAL",
+                    "DRAFT",
+                    "WICHTIG"
+                ],
                 "arrangements": [
                     {
                         "id": 1,
@@ -38,7 +43,8 @@
                 "id": 3,
                 "title": "Session B-1",
                 "recordings": [],
-                "arrangements": []
+                "arrangements": [],
+                "tags": []
             }
 
         ]

@@ -9,7 +9,7 @@
     ],
     "assets" : {
         "[id]":{
-            "title": "[title:STRI]",
+            "title": "[title]",
             "description": "[description]",
             "content": "[content]",
             "type": "[type: IMAGE | FILE | TEXT | LABEL ]",
@@ -26,5 +26,33 @@
             "rank": "[rank:INT]",
             "related": "[related:LIST:ID]"
         }
-    }
+    },
+    "projects": [
+        {
+            "id": "[id:INT]",
+            "title": "[title]",
+            "sessions": [
+                {
+                    "id": "[id:INT]",
+                    "title": "[title]",
+                    "recordings": [
+                        {
+                            "id": "[id:INT]",
+                            "in": "[in:TIMESTAMP]",
+                            "type": "[type]",
+                            "file_path": "[file_path]",
+                            "transcript": "[file_path]"
+                        }
+                    ],
+                    "tags": "[tags:LIST]",
+                    "arrangements": [
+                        {
+                            "id": "[id:INT]",
+                            "title": "[title]"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
