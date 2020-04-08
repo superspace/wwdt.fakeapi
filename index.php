@@ -17,30 +17,30 @@ if (isset($_REQUEST['q'])) {
     switch ($endpoint) {
 
         /**
-         * Get projects
+         * List projects
          * 
          * @param sessionId
          **/
 
-        case 'get-projects' :
+        case 'project/list' :
             $data = file_get_contents('data/projects.json');
             $response['result'] = json_decode($data);
             $response['status'] = 'OK';
             break;
 
-        case 'get-assets' :
+        case 'asset/list' :
             $data = file_get_contents('data/assets.json');
             $response['result'] = json_decode($data);
             $response['status'] = 'OK';
             break;
 
-        case 'get-markers' :
+        case 'marker/list' :
             $data = file_get_contents('data/markers.json');
             $response['result'] = json_decode($data);
             $response['status'] = 'OK';
             break;
 
-        case 'get-arrangement' :
+        case 'arrangement/list' :
             $data = file_get_contents('data/arrangement.json');
             $response['result'] = json_decode($data);
             $response['status'] = 'OK';
@@ -48,12 +48,12 @@ if (isset($_REQUEST['q'])) {
 
         // Create
 
-        case 'create-marker' :
+        case 'marker/create' :
             $response['status'] = 'OK';
             $response['params'] = json_decode(file_get_contents('php://input'));
             break;
 
-        case 'create-asset' :
+        case 'asset/create' :
             $response['status'] = 'OK';
             $response['request'] = json_decode(file_get_contents('php://input'));
             break;
@@ -70,7 +70,7 @@ if (isset($_REQUEST['q'])) {
          * @param file
          **/
         
-        case 'update-asset' :
+        case 'asset/update' :
             $response['status'] = 'OK';
             $response['request'] = $_POST;            
             break;
@@ -84,7 +84,7 @@ if (isset($_REQUEST['q'])) {
          * @param assets
          **/
 
-        case 'update-marker' :
+        case 'marker/update' :
             $response['status'] = 'OK';
             $response['request'] = $_POST;            
             break;
@@ -95,7 +95,7 @@ if (isset($_REQUEST['q'])) {
          * @param id
         */
 
-        case 'delete-marker' :
+        case 'marker/delete' :
             $response['status'] = 'OK';
             $response['request'] = $_POST;            
             break;
@@ -106,7 +106,7 @@ if (isset($_REQUEST['q'])) {
          * @param id
          **/
 
-        case 'delete-asset' :
+        case 'asset/delete' :
             $response['status'] = 'OK';
             $response['request'] = $_POST;            
             break;
