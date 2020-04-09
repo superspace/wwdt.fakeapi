@@ -40,7 +40,7 @@ if (isset($_REQUEST['q'])) {
             $response['status'] = 'OK';
             break;
 
-        case 'arrangement/list' :
+        case 'arrangement/1' :
             $data = file_get_contents('data/arrangement.json');
             $response['result'] = json_decode($data);
             $response['status'] = 'OK';
