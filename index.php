@@ -49,13 +49,22 @@ if (isset($_REQUEST['q'])) {
         // Create
 
         case 'marker/create' :
+            $marker = $_POST;
+            $marker['id'] = rand(100,1000);
+            $response['result'] = $marker;
             $response['status'] = 'OK';
-            $response['params'] = json_decode(file_get_contents('php://input'));
             break;
 
         case 'asset/create' :
+            $asset = $_POST;
+            $asset['id'] = rand(100,1000);
+            $asset['creationdate'] = Date("Y-m-d H:i:s");
+            $asset['modificationdate'] = "";
+            $asset['author'] = "User A";
+            $asset['tags'] = explode(',', $_POST['tags']);
+            $asset['related'] = [];
+            $response['result'] = $asset;
             $response['status'] = 'OK';
-            $response['request'] = json_decode(file_get_contents('php://input'));
             break;
 
         /**
