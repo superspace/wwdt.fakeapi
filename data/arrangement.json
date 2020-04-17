@@ -5,132 +5,154 @@
         {
             "id": 1,
             "title": "Keyframe A",
-            "time": 4
+            "time": 4,
+            "assets": [
+                {
+                    "id": 2,
+                    "props" : {
+                        "x": 120,
+                        "y": 60,
+                        "z": 3,
+                        "scale": 1
+                    }
+                }
+            ]
         },
         {
             "id": 2,
             "title": "Keyframe B",
-            "time": 12
+            "time": 12,
+            "assets": [
+                {
+                    "id": 2,
+                    "props" : {
+                        "x": 200,
+                        "y": 120,
+                        "z": 3,
+                        "scale": 2
+                    }
+                },{
+                    "id": 3,
+                    "props" : {
+                        "x": 480,
+                        "y": 350,
+                        "z": 3,
+                        "scale": 1.5
+                    }
+                },{
+                    "id": 5,
+                    "props" : {
+                        "x": 400,
+                        "y": 300,
+                        "z": 3,
+                        "scale": 3
+                    }
+                }
+            ]
         },
         {
             "id": 3,
             "title": "Keyframe C",
-            "time": 14
+            "time": 7,
+            "assets": [
+                {
+                    "id": 2,
+                    "props" : {
+                        "x": 300,
+                        "y": 100,
+                        "z": 3,
+                        "scale": 0.5
+                    }
+                },{
+                    "id": 3,
+                    "props" : {
+                        "x": 400,
+                        "y": 200,
+                        "z": 3,
+                        "scale": 1
+                    }
+                },{
+                    "id": 1,
+                    "props" : {
+                        "x": 200,
+                        "y": 100,
+                        "z": 3,
+                        "scale": 2
+                    }
+                },{
+                    "id": 6,
+                    "props" : {
+                        "x": 450,
+                        "y": 120,
+                        "z": 3,
+                        "scale": 3
+                    }
+                }
+            ]
         },
         {
             "id": 4,
             "title": "Keyframe D",
-            "time": 19
+            "time": 19,
+            "assets": [
+                {
+                    "id": 2,
+                    "props" : {
+                        "x": 30,
+                        "y": 80,
+                        "z": 3,
+                        "scale": 3
+                    }
+                },{
+                    "id": 1,
+                    "props" : {
+                        "x": 20,
+                        "y": 400,
+                        "z": 3,
+                        "scale": 3
+                    }
+                },{
+                    "id": 5,
+                    "props" : {
+                        "x": 100,
+                        "y": 300,
+                        "z": 3,
+                        "scale": 1
+                    }
+                },{
+                    "id": 6,
+                    "props" : {
+                        "x": 400,
+                        "y": 300,
+                        "z": 3,
+                        "scale": 1
+                    }
+                }            
+            ]
         },
         {
             "id": 5,
             "title": "Keyframe E",
-            "time": 22
-        }
-    ],
-    "assets": [
-        {
-            "id": 2,
-            "props": [{
-                    "keyframe": 1,
-                    "x": 120,
-                    "y": 60,
-                    "z": 3,
-                    "scale": 1
-                },
+            "time": 22,
+            "assets": [
                 {
-                    "keyframe": 2,
-                    "x": 200,
-                    "y": 80,
-                    "z": 7,
-                    "scale": 1.5
-                },
-                {
-                    "keyframe": 3,
-                    "x": 300,
-                    "y": 70,
-                    "z": 3,
-                    "scale": 1
-                },
-                {
-                    "keyframe": 4,
-                    "action": "out"
-                }
-            ]
-        },
-        {
-            "id": 6,
-            "props": [{
-                    "keyframe": 1,
-                    "x": 200,
-                    "y": 390,
-                    "z": 12,
-                    "scale": 1
-                },
-                {
-                    "keyframe": 3,
-                    "x": 400,
-                    "y": 120,
-                    "z": 20,
-                    "scale": 1.5
-                },
-                {
-                    "keyframe": 4,
-                    "x": 500,
-                    "y": 200,
-                    "z": 12,
-                    "scale": 1
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "props": [{
-                    "keyframe": 2,
-                    "x": 300,
-                    "y": 90,
-                    "z": 2,
-                    "scale": 1
-                },
-                {
-                    "keyframe": 3,
-                    "x": 500,
-                    "y": 90,
-                    "z": 20,
-                    "scale": 1.5
-                },
-                {
-                    "keyframe": 4,
-                    "x": 400,
-                    "y": 20,
-                    "z": 2,
-                    "scale": 1
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "props": [{
-                    "keyframe": 1,
-                    "x": 100,
-                    "y": 120,
-                    "z": 3,
-                    "scale": 1
-                },
-                {
-                    "keyframe": 2,
-                    "x": 100,
-                    "y": 120,
-                    "z": 7,
-                    "scale": 2
-                },
-                {
-                    "keyframe": 3,
-                    "x": 100,
-                    "y": 20,
-                    "z": 3,
-                    "scale": 1
-                }
+                    "id": 5,
+                    "props" : {
+                        "x": 200,
+                        "y": 400,
+                        "z": 9,
+                        "scale": 1
+                    }
+                },{
+                    "id": 6,
+                    "props" : {
+                        "x": 150,
+                        "y": 300,
+                        "z": 3,
+                        "scale": 1
+                    }
+                }            
+
             ]
         }
     ]

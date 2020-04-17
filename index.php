@@ -19,7 +19,6 @@ if (isset($_REQUEST['q'])) {
         /**
          * List projects
          * 
-         * @param sessionId
          **/
 
         case 'project/list' :
@@ -28,11 +27,23 @@ if (isset($_REQUEST['q'])) {
             $response['status'] = 'OK';
             break;
 
+        /**
+         * List assets
+         * 
+         * @param sessionId
+         **/
+
         case 'asset/list' :
             $data = file_get_contents('data/assets.json');
             $response['result'] = json_decode($data);
             $response['status'] = 'OK';
             break;
+
+        /**
+         * List markers
+         * 
+         * @param sessionId
+         **/
 
         case 'marker/list' :
             $data = file_get_contents('data/markers.json');
@@ -40,20 +51,44 @@ if (isset($_REQUEST['q'])) {
             $response['status'] = 'OK';
             break;
 
+        /**
+         * Get arrangement by id
+         * 
+         **/
+
         case 'arrangement/1' :
             $data = file_get_contents('data/arrangement.json');
             $response['result'] = json_decode($data);
             $response['status'] = 'OK';
             break;
 
-        // Create
+        /**
+         * Create marker
+         * 
+         * @param title string
+         * @param time int
+         **/
 
         case 'marker/create' :
             $marker = $_POST;
             $marker['id'] = rand(100,1000);
+            $marker['assets'] = [];
             $response['result'] = $marker;
             $response['status'] = 'OK';
             break;
+
+
+        /**
+         * Create asset
+         * 
+         * @param type string
+         * @param title string
+         * @param description string
+         * @param tags string
+         * @param rank int
+         * @param content string
+         * @param file file
+         **/
 
         case 'asset/create' :
             $asset = $_POST;
@@ -68,15 +103,30 @@ if (isset($_REQUEST['q'])) {
             break;
 
         /**
+         * Create keyframe
+         * 
+         * @param title string
+         * @param time int
+         **/
+
+        case 'keyframe/create' :
+            $keyframe = $_POST;
+            $keyframe['id'] = rand(100,1000);
+            $response['result'] = $keyframe;
+            $response['status'] = 'OK';
+            break;
+
+        /**
          * Update Asset
          * 
-         * @param id
-         * @param title
-         * @param description
-         * @param content
-         * @param tags
-         * @param rank
-         * @param file
+         * @param id int
+         * @param type string
+         * @param title string
+         * @param description string
+         * @param tags string
+         * @param rank int
+         * @param content string
+         * @param file file
          **/
         
         case 'asset/update' :
@@ -87,10 +137,10 @@ if (isset($_REQUEST['q'])) {
         /**
          * Update Marker
          * 
-         * @param id
-         * @param title
-         * @param time
-         * @param assets
+         * @param id int
+         * @param title string
+         * @param time int
+         * @param assets array
          **/
 
         case 'marker/update' :
@@ -99,9 +149,50 @@ if (isset($_REQUEST['q'])) {
             break;
 
         /**
+         * Update Keyframe
+         * 
+         * @param id int
+         * @param title string
+         * @param time int
+         **/
+
+        case 'keyframe/update' :
+            $response['status'] = 'OK';
+            $response['request'] = $_POST;            
+            break;
+
+        /**
+         * Update asset in keyframe
+         * 
+         * @param keyframeId int
+         * @param assetId int
+         * @param x int
+         * @param y int
+         * @param z int
+         * @param scale float
+         **/
+
+        case 'keyframe/asset/update' :
+            $response['status'] = 'OK';
+            $response['request'] = $_POST;            
+            break;
+
+        /**
+         * Remove asset from keyframe
+         * 
+         * @param keyframeId int
+         * @param assetId int
+         **/
+
+        case 'keyframe/asset/remove' :
+            $response['status'] = 'OK';
+            $response['request'] = $_POST;            
+            break;
+
+        /**
          * Delete Marker 
          * 
-         * @param id
+         * @param id int
         */
 
         case 'marker/delete' :
@@ -110,9 +201,20 @@ if (isset($_REQUEST['q'])) {
             break;
 
         /**
+         * Delete Keyframe
+         * 
+         * @param id int
+        */
+
+        case 'keyframe/delete' :
+            $response['status'] = 'OK';
+            $response['request'] = $_POST;            
+            break;
+
+        /**
          * Delete Asset
          * 
-         * @param id
+         * @param id int
          **/
 
         case 'asset/delete' :
