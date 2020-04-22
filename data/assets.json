@@ -6,7 +6,7 @@
         "type": "IMAGE",
         "file": {
             "src": "/assets/session-1/uploads/asset-1.jpg",
-            "thumb": "/assets/session-1/uploads/_thumbs/asset-1.jpg",
+            "thumb": "/assets/session-1/uploads/asset-1.jpg",
             "filetype": "image/jpg",
             "filesize": 22343
         },
@@ -23,8 +23,8 @@
         "content": "",
         "type": "FILE",
         "file": {
-            "src": "/assets/session-1/uploads/asset-2.gif",
-            "thumb": "/assets/session-1/uploads/_thumbs/asset-2.jpg",
+            "src": "/assets/session-1/uploads/asset-2.xls",
+            "thumb": "",
             "filetype": "application/xls",
             "filesize": 97987
         },
@@ -42,7 +42,7 @@
         "type": "FILE",
         "file": {
             "src": "/assets/session-1/uploads/asset-3.pdf",
-            "thumb": "/assets/session-1/uploads/_thumbs/asset-3.jpg",
+            "thumb": "/assets/session-1/uploads/asset-3.jpg",
             "filetype": "application/pdf",
             "filesize": 98787
         },
@@ -60,7 +60,7 @@
         "type": "IMAGE",
         "file": {
             "src": "/assets/session-1/uploads/asset-4.jpg",
-            "thumb": "/assets/session-1/uploads/_thumbs/asset-4.jpg",
+            "thumb": "/assets/session-1/uploads/asset-4.jpg",
             "filetype": "image/jpg",
             "filesize": 98787
         },
@@ -69,7 +69,7 @@
         "creationdate": "2020-03-25 16:22:09",
         "modificationdate": "2020-03-28 11:12:10",
         "rank": 2,
-        "related": []
+        "related": [6,7]
     },
     "5":{
         "title": "Protokoll",
@@ -79,7 +79,7 @@
         "tags": [],
         "author": "User B",
         "creationdate": "2020-03-25 16:22:09",
-        "modificationdate": "2020-03-28 11:12:10",
+        "modificationdate": "",
         "rank": 4,
         "related": [1,2]
     },
@@ -93,6 +93,18 @@
         "creationdate": "2020-03-25 16:22:09",
         "modificationdate": "2020-03-28 11:12:10",
         "rank": 4,
+        "related": []
+    },
+    "7":{
+        "title": "Hypermagazine",
+        "description": "",
+        "content": "https://www.hyperwerk.ch",
+        "type": "URL",
+        "tags": [],
+        "author": "User A",
+        "creationdate": "2020-03-26 16:22:09",
+        "modificationdate": "",
+        "rank": 2,
         "related": []
     }
 }

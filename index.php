@@ -30,7 +30,7 @@ if (isset($_REQUEST['q'])) {
         /**
          * List assets
          * 
-         * @param sessionId
+         * @param sessionId int
          **/
 
         case 'asset/list' :
@@ -42,7 +42,7 @@ if (isset($_REQUEST['q'])) {
         /**
          * List markers
          * 
-         * @param sessionId
+         * @param sessionId int
          **/
 
         case 'marker/list' :
@@ -67,6 +67,7 @@ if (isset($_REQUEST['q'])) {
          * 
          * @param title string
          * @param time int
+         * @param sessionId int
          **/
 
         case 'marker/create' :
@@ -88,6 +89,7 @@ if (isset($_REQUEST['q'])) {
          * @param rank int
          * @param content string
          * @param file file
+         * @param sessionId int
          **/
 
         case 'asset/create' :
@@ -107,6 +109,7 @@ if (isset($_REQUEST['q'])) {
          * 
          * @param title string
          * @param time int
+         * @param arrangementId int
          **/
 
         case 'keyframe/create' :
@@ -172,7 +175,19 @@ if (isset($_REQUEST['q'])) {
          * @param scale float
          **/
 
-        case 'keyframe/asset/update' :
+        case 'keyframe/properties/update' :
+            $response['status'] = 'OK';
+            $response['request'] = $_POST;            
+            break;
+
+        /**
+         * Add asset to keyframe
+         * 
+         * @param keyframeId int
+         * @param assetId int
+         **/
+
+        case 'keyframe/properties/add' :
             $response['status'] = 'OK';
             $response['request'] = $_POST;            
             break;
@@ -184,7 +199,7 @@ if (isset($_REQUEST['q'])) {
          * @param assetId int
          **/
 
-        case 'keyframe/asset/remove' :
+        case 'keyframe/properties/remove' :
             $response['status'] = 'OK';
             $response['request'] = $_POST;            
             break;
